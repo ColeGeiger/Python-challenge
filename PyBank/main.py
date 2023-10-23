@@ -7,7 +7,7 @@ min_date=None
 change=[]
 bankdata=[]
 
-with open("Resources/budget_data.csv") as f:
+with open("C:/Users/Scherz/Desktop/School/Homework/Python-challenge/PyBank/Resources/budget_data.csv") as f:
     line=f.readline()
     previous=None
     while line:
