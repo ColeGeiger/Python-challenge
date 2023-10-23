@@ -30,10 +30,14 @@ with open("C:/Users/Scherz/Desktop/School/Homework/Python-challenge/PyBank/Resou
                     min_date=line[0]
             previous=num
 
+output="Financial Analysis\n----------------------------"
 
-print(bankdata)   
-print("Total months: ", len(bankdata))
-print("Total: $"+ str(net))
-print("Average Change: $"+ str(round(sum(change)/len(change), 2)))
-print("Greatest Increase in Profits: "+max_date+" ($"+str(max_change)+")")
-print("Greatest Decrease in Profits: "+min_date+" ($"+str(min_change)+")")
+output+="\nTotal months: " + str(len(bankdata))
+output+="\nTotal: $"+ str(net)
+output+="\nAverage Change: $"+ str(round(sum(change)/len(change), 2))
+output+="\nGreatest Increase in Profits: "+max_date+" ($"+str(max_change)+")"
+output+="\nGreatest Decrease in Profits: "+min_date+" ($"+str(min_change)+")"
+with open("C:/Users/Scherz/Desktop/School/Homework/Python-challenge/PyBank/Analysis/Financial_Analysis.txt", "w") as f:
+    f.write(output)
+    f.close()
+print(output)
