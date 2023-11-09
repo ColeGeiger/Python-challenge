@@ -5,7 +5,7 @@ d=0
 c=0
 candidates=["Raymon Anthony Doane", "Diana DeGette", "Charles Casper Stockham"] 
 
-with open("C:/Users/Scherz/Desktop/School/Homework/Python-challenge/PyPoll/Resources/election_data.csv") as f:
+with open("PyPoll/Resources/election_data.csv") as f:
     line=f.readline()
     while line:
         line=f.readline()
