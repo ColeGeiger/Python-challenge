@@ -29,7 +29,7 @@ output+=f"\nDiana DeGette: {round(d/len(votes)*100, 3)}% ({d})"
 output+=f"\nRaymon Anthony Doane: {round(r/len(votes)*100, 3)}% ({r})"
 output+=f"\n-------------------------\nWinner: {winner}"
 
-with open("C:/Users/Scherz/Desktop/School/Homework/Python-challenge/PyPoll/Analysis/Election_Results.txt", "w") as f:
+with open("PyPoll/Analysis/Election_Results.txt", "w") as f:
     f.write(output)
     f.close()
 print(output)
